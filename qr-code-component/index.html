@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: outfit;
+        src: url(./fonts/outfit/Outfit-VariableFont_wght.ttf);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        grid-row: 3 / 4;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        font-family: outfit;
+        font-size: 15px;
+        background-color: hsl(220, 15%, 55%);
+        margin: 0;
+      }
+      img {
+        display: block;
+        border-radius: 1em;
+        margin: 0 auto;
+        width: 20em;
+      }
+      p {
+        color: gray;
+      }
+      .gridcontainer {
+        display: grid;
+        grid-template-rows: 1fr, 3em, 1fr;
+        grid-template-columns: 1fr;
+        background-color: rgb(213, 225, 239);
+        height: 100vh;
+        margin: 0;
+      }
+      .center {
+        grid-row: 2 / 3;
+        text-align: center;
+        background-color: white;
+        padding: 1em;
+        width: 20em;
+        height: 30em;
+        margin: 0 auto;
+        border-radius: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gridcontainer">
+      <div class="center">
+        <img src="./images/image-qr-code.png" />
+
+        <h3>Improve your front-end skills by building projects</h3>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/SanderBuist2"
+          >Sander Buist</a
+        >.
+      </div>
+    </div>
+  </body>
+</html>

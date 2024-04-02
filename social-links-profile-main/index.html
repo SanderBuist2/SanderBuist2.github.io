@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --location: hsl(75, 94%, 57%);
+        --textcolor: hsl(0, 0%, 100%);
+        --Grey: hsl(0, 0%, 20%);
+        --DarkGrey: hsl(0, 0%, 12%);
+        --OffBlack: hsl(0, 0%, 8%);
+      }
+      @font-face {
+        font-family: cardfont;
+        src: url(./assets/fonts/Inter-VariableFont_slnt_wght.ttf);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        background-color: var(--OffBlack);
+        color: var(--textcolor);
+        height: 100vh;
+        font-size: 14px;
+        font-family: cardfont;
+      }
+      .profilecard {
+        margin: auto;
+        margin-top: 5em;
+        width: 26em;
+        background-color: var(--DarkGrey);
+        text-align: center;
+        border-radius: 1em;
+      }
+      .socialphoto {
+        border-radius: 100%;
+        margin-top: 2em;
+        height: 6em;
+      }
+      .name {
+        margin-bottom: 0;
+      }
+      .location {
+        color: var(--location);
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+      }
+      .social {
+        padding: 0;
+        padding-bottom: 2em;
+      }
+      .socialbutton {
+        margin: 1em auto;
+        list-style: none;
+        background-color: var(--Grey);
+        width: 80%;
+        height: 3em;
+        border-radius: 0.5em;
+        line-height: 3em;
+      }
+      .socialbutton:hover {
+        background-color: var(--location);
+        cursor: pointer;
+        color: var(--OffBlack);
+      }
+      .link {
+        text-decoration: none;
+        color: var(--textcolor);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profilecard">
+      <img src="./assets/images/avatar-jessica.jpeg" class="socialphoto" />
+      <h1 class="name">Jessica Randall</h1>
+      <p class="location">London, United Kingdom</p>
+      <p class="subtext">"Front-end developer and avid reader."</p>
+      <ul class="social">
+        <a href="https://www.github.com" class="link"
+          ><li class="socialbutton">GitHub</li></a
+        >
+        <a href="https://www.frontendmentor.io" class="link">
+          <li class="socialbutton">Frontend Mentor</li></a
+        >
+
+        <a href="https://www.linkedin.com" class="link"
+          ><li class="socialbutton">LinkedIn</li></a
+        >
+
+        <a href="https://www.twitter.com" class="link"
+          ><li class="socialbutton">Twitter</li></a
+        >
+
+        <a href="https://www.instagram.com" class="link"
+          ><li class="socialbutton">Instagram</li></a
+        >
+      </ul>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/SanderBuist2"
+        >Sander Buist</a
+      >.
+    </div>
+  </body>
+</html>

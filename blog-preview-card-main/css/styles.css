@@ -1,0 +1,77 @@
+:root {
+  --mainbackground: hsl(47, 88%, 63%);
+  --cardbackground: hsl(0, 0%, 100%);
+  --textGrey: hsl(0, 0%, 50%);
+  --textBlack: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: thiscard;
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+body {
+  background-color: var(--mainbackground);
+  font-family: thiscard;
+}
+
+.card {
+  background-color: var(--cardbackground);
+  width: 20em;
+  margin: 0 auto;
+  margin-top: 3em;
+  padding: 1.5em;
+  border-radius: 1.5em;
+  border-width: 1px;
+  border-color: var(--textBlack);
+  border-style: solid;
+  box-shadow: 0.5em 0.5em var(--textBlack);
+}
+.headerImg {
+  border-radius: 0.5em;
+  margin: 0 auto;
+  width: 100%;
+}
+.cardlable {
+  margin-top: 1em;
+  background-color: var(--mainbackground);
+  width: 5em;
+  border-radius: 0.3em;
+  text-align: center;
+  height: 2em;
+  line-height: 2em;
+  font-weight: bold;
+}
+.date {
+  font-size: 14px;
+}
+.link {
+  text-decoration: none;
+  color: var(--textBlack);
+}
+.link:hover {
+  color: var(--mainbackground);
+}
+.description {
+  color: var(--textGrey);
+  margin-bottom: 1em;
+}
+.ownerphoto {
+  margin: 0.5em;
+  border-radius: 100%;
+  height: 2em;
+  line-height: 2em;
+  display: inline-block;
+}
+.name {
+  font-weight: bold;
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  display: inline-block;
+}
+
+.owner {
+  height: 3em;
+  display: flex;
+}
