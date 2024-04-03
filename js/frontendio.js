@@ -31,4 +31,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
   },
+  {
+    type: "a",
+    title: "Product preview card component",
+    href: "./product-preview-card-component-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub",
+  },
 ];

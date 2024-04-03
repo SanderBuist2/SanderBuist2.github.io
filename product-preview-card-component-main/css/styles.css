@@ -1,0 +1,111 @@
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: Mouserrat;
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: fraunces;
+  src: url("../assets/fonts/Fraunces-VariableFont_SOFT_WONK_opsz_wght.ttf");
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--Cream);
+  font-family: Mouserrat;
+  font-size: 14px;
+  color: var(--Darkcyan);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.productCard {
+  background-color: var(--White);
+  width: 24em;
+  border-radius: 1em;
+  overflow: hidden;
+}
+.productImage {
+  width: 100%;
+}
+
+.productInformation {
+  padding: 1.5em;
+  padding-top: 0.5em;
+}
+
+.productType {
+  padding-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 12px;
+}
+.title {
+  background-color: var(--White);
+  font-family: fraunces;
+  font-weight: 700;
+  color: var(--Verydarkblue);
+  margin-top: 0.5em;
+}
+.prices {
+  display: flex;
+  align-items: center;
+}
+.price {
+  background-color: var(--White);
+  font-family: fraunces;
+  font-weight: 700;
+  font-size: 36px;
+  display: inline-block;
+}
+.fromprice {
+  margin-left: 2em;
+  display: inline-block;
+  text-decoration: line-through;
+  background-color: var(--White);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Darkcyan);
+  text-align: center;
+  border-radius: 0.5em;
+  margin-top: 1.5em;
+}
+
+.button:hover {
+  background-color: var(--Verydarkblue);
+}
+.buttonIcon {
+  height: 1em;
+}
+.buttonText {
+  margin-left: 1em;
+  color: var(--White);
+  font-weight: 700;
+  height: 3em;
+  line-height: 3em;
+}
+
+@media screen and (min-width: 375px) {
+  .productCard {
+    display: flex;
+    width: 40em;
+  }
+  .productImage {
+    width: 20em;
+    content: url("../images/image-product-desktop.jpg");
+  }
+}
