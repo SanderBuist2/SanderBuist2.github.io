@@ -47,4 +47,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV",
   },
+  {
+    type: "a",
+    title: "Huddle landing page",
+    href: "./huddle-landing-page-with-single-introductory-section-master/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
+  },
 ];
