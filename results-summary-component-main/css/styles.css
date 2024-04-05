@@ -1,0 +1,195 @@
+:root {
+  --Lightred: hsl(0, 100%, 67%);
+  --orangeyyellow: hsl(39, 100%, 56%);
+  --Greenteal: hsl(166, 100%, 37%);
+  --Cobaltblue: hsl(234, 85%, 45%);
+
+  --Lightslatebluebackground: hsl(252, 100%, 67%);
+  --Lightroyalbluebackground: hsl(241, 81%, 54%);
+
+  --Violetbluecircle: hsla(256, 72%, 46%, 1);
+  --Persianbluecircle: hsla(241, 72%, 46%, 0);
+
+  --White: hsl(0, 0%, 100%);
+  --Paleblue: hsl(221, 100%, 96%);
+  --Lightlavender: hsl(241, 100%, 89%);
+  --Darkgrayblue: hsl(224, 30%, 27%);
+}
+
+@font-face {
+  font-family: scorefont;
+  src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  font-family: scorefont;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.scorecard {
+  background-image: linear-gradient(
+    var(--Lightslatebluebackground),
+    var(--Lightroyalbluebackground)
+  );
+  justify-content: center;
+  text-align: center;
+  padding: 1.5em 2em 2em 2em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+.label {
+  color: var(--Lightlavender);
+  margin-bottom: 1.5em;
+}
+.scorecircle {
+  background-image: linear-gradient(
+    var(--Violetbluecircle),
+    var(--Persianbluecircle)
+  );
+  margin: 0 auto;
+  border-radius: 100%;
+  width: 8em;
+  height: 8em;
+}
+.result {
+  color: var(--White);
+  font-weight: 700;
+  font-size: 50px;
+  padding-top: 0.5em;
+}
+.subscore {
+  color: hsl(241, 100%, 89%, 50%);
+}
+.encouragetitle {
+  margin-top: 1em;
+  color: var(--White);
+}
+.encourage {
+  color: var(--Lightlavender);
+  margin-top: 0.5em;
+}
+.summarycard {
+  padding: 2em;
+  padding-top: 1.5em;
+  background-color: var(--White);
+}
+.summarytitle {
+  margin-bottom: 1.5em;
+  font-weight: 700;
+}
+
+.summerysegment {
+  display: flex;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-right: 1em;
+}
+.leftsummary {
+  display: flex;
+}
+
+.Reaction {
+  color: var(--Lightred);
+  background-color: hsl(0, 100%, 67%, 10%);
+}
+
+.Memory {
+  color: var(--orangeyyellow);
+  background-color: hsl(39, 100%, 56%, 10%);
+}
+
+.Verbal {
+  color: var(--Greenteal);
+  background-color: hsl(166, 100%, 37%, 10%);
+}
+
+.Visual {
+  color: var(--Cobaltblue);
+  background-color: hsl(234, 85%, 45%, 10%);
+}
+
+.score {
+  color: var(--Darkgrayblue);
+  align-items: flex-end;
+}
+
+.score::after {
+  content: " / 100";
+  color: hsl(224, 30%, 27%, 50%);
+}
+
+.continuebutton {
+  background-color: var(--Darkgrayblue);
+  color: var(--White);
+  text-align: center;
+  line-height: 3em;
+  border-radius: 1.5em;
+  margin-top: 1.5em;
+}
+
+.continuebutton:hover {
+  background-image: linear-gradient(
+    var(--Lightslatebluebackground),
+    var(--Lightroyalbluebackground)
+  );
+}
+
+.line {
+  color: var(--Darkgrayblue);
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .resultsummary {
+    display: flex;
+    width: 40em;
+    border-radius: 2em;
+    box-shadow: 1em 1em 2em var(--Paleblue);
+  }
+
+  .scorecircle {
+    height: 10em;
+    width: 10em;
+  }
+
+  .result {
+    padding-top: 0.7em;
+    font-size: 60px;
+  }
+
+  .scorecard {
+    border-radius: 2em;
+    width: 15em;
+  }
+
+  .summarycard {
+    width: 15em;
+  }
+
+  .summerysegment {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+  }
+}
