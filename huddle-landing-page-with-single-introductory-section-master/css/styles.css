@@ -1,0 +1,152 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url("../assets/fonts/OpenSans-VariableFont_wdth_wght.ttf");
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+body {
+  background-color: var(--Violet);
+  background-image: url("../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  color: white;
+  font-family: poppins;
+  font-weight: 400;
+  text-align: center;
+}
+
+.introduction {
+  font-family: opensans;
+  margin: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  width: 10em;
+}
+
+.header {
+  margin: 1em;
+}
+
+.headerimage {
+  margin-top: 7em;
+  margin-bottom: 3em;
+  width: 80%;
+}
+
+.button {
+  background-color: white;
+  color: var(--Violet);
+  line-height: 3em;
+  width: 15em;
+  margin: 0 auto;
+  border-radius: 1.5em;
+  box-shadow: 0.1em 0.2em 0.5em rgb(64, 48, 104);
+}
+
+.button:hover {
+  background-color: var(--SoftMagenta);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.socialbutton {
+  border-radius: 100%;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  color: white;
+  height: 1.5em;
+  width: 2em;
+  line-height: 1em;
+  margin: 4em 0.5em;
+  margin-bottom: 2em;
+  padding-top: 0.5em;
+}
+
+.socialbutton:hover {
+  border-color: var(--SoftMagenta);
+  color: var(--SoftMagenta);
+}
+
+.socialbutton:hover::after {
+  border-color: red;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url("../images/bg-desktop.svg");
+  }
+  .introduction {
+    max-width: 30em;
+  }
+
+  .logo {
+    margin-top: 2rem;
+    margin-left: 4rem;
+  }
+  .header {
+    margin-left: 2rem;
+  }
+  .headerimage {
+    max-width: 50em;
+    margin-left: 5rem;
+    margin-top: 11rem;
+    margin-bottom: 0;
+  }
+  .container {
+    display: flex;
+  }
+  .rightcontainer {
+    margin-top: 12rem;
+    padding-right: 4rem;
+    text-align: left;
+    max-width: 30em;
+  }
+  .button {
+    text-align: center;
+    margin: 1rem 2rem;
+  }
+  .social {
+    justify-content: right;
+    padding: 0;
+    padding-right: 3rem;
+    margin-top: 0;
+  }
+  .socialbutton {
+    margin: 0 0.5em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background-position: center top;
+  }
+  .page {
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
