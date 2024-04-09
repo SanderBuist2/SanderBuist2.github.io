@@ -63,4 +63,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz",
   },
+  {
+    type: "a",
+    title: "NFT preview card component",
+    href: "./nft-preview-card-component-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U",
+  },
 ];
