@@ -55,4 +55,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
   },
+  {
+    type: "a",
+    title: "Faq accordion",
+    href: "./faq-accordion-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz",
+  },
 ];
