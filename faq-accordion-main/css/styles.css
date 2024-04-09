@@ -1,0 +1,88 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Lightpink: hsl(275, 100%, 97%);
+  --Grayishpurple: hsl(292, 16%, 49%);
+  --Darkpurple: hsl(292, 42%, 14%);
+}
+
+@font-face {
+  font-family: faqfont;
+  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+body {
+  background-color: var(--Lightpink);
+  background-image: url("../assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  font-family: faqfont;
+  font-weight: 400;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  display: inline;
+  margin: 0;
+}
+
+.star {
+  display: inline;
+  margin-right: 2rem;
+  height: 1.5rem;
+}
+
+.container {
+  background-color: var(--White);
+  width: 18rem;
+  padding: 2rem;
+  padding-bottom: 0rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 2rem 3rem hsl(292, 16%, 49%, 50%);
+}
+
+.question {
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  user-select: text;
+}
+
+.question:hover {
+  color: var(--Grayishpurple);
+  cursor: pointer;
+}
+
+.question p {
+  width: 80%;
+}
+
+.plusminus {
+  content: url("../assets/images/icon-minus.svg");
+}
+
+.awnser {
+  color: var(--Grayishpurple);
+  transition-duration: 500ms;
+  height: auto;
+}
+
+.line {
+  color: hsl(275, 100%, 97%, 30%);
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+    background-position: center top;
+  }
+  .container {
+    width: 30rem;
+  }
+  .question p {
+    width: 90%;
+  }
+}
