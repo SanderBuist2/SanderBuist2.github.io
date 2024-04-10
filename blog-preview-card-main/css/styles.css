@@ -52,6 +52,10 @@ body {
 .link:hover {
   color: var(--mainbackground);
 }
+
+.card:has(a:hover) {
+  box-shadow: 1em 1em var(--textBlack);
+}
 .description {
   color: var(--textGrey);
   margin-bottom: 1em;

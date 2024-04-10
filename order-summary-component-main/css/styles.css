@@ -1,0 +1,126 @@
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+  --White: hsl(0, 100%, 100%);
+}
+
+@font-face {
+  font-family: Redhat;
+  src: url("../fonts/RedHatDisplay-VariableFont_wght.ttf");
+}
+
+body {
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  font-family: Redhat;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--Desaturatedblue);
+  background-color: var(--Paleblue);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--Darkblue);
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.container {
+  background-color: var(--White);
+  width: 20rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0rem 2rem 2rem hsla(224, 23%, 55%, 0.5);
+}
+
+.headerimage {
+  width: 100%;
+}
+
+.tip {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.summary {
+  background-color: var(--Verypaleblue);
+  height: 3rem;
+  padding: 1rem;
+  margin: 1rem 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.summary a {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  justify-self: flex-end;
+  margin-left: auto;
+}
+.summary a:hover {
+  color: var(--Desaturatedblue);
+}
+.productDescription {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.productDescription p {
+  margin: 0;
+}
+
+.description {
+  color: var(--Darkblue);
+  font-weight: 900;
+  margin: 0;
+}
+
+.confirmbutton {
+  display: block;
+  background-color: var(--Brightblue);
+  color: var(--Verypaleblue);
+  margin: 1.5rem;
+  padding: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 1rem;
+  box-shadow: 0rem 2rem 2rem hsla(245, 75%, 52%, 0.3);
+}
+.confirmbutton:hover {
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.cancelbutton {
+  display: block;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--Desaturatedblue);
+}
+
+.cancelbutton:hover {
+  color: var(--Darkblue);
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-position: center top;
+  }
+  .container {
+    width: 24rem;
+  }
+}
