@@ -71,4 +71,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U",
   },
+  {
+    type: "a",
+    title: "Interactive rating component",
+    href: "./interactive-rating-component-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
+  },
 ];
