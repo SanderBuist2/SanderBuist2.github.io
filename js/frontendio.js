@@ -79,4 +79,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
   },
+  {
+    type: "a",
+    title: "Order summary component",
+    href: "./order-summary-component-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj",
+  },
 ];

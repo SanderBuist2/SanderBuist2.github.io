@@ -27,13 +27,14 @@ frontendio.forEach((item) => {
   const divItem = document.createElement("div");
   const element = document.createElement(item.type);
   element.setAttribute("href", item.href);
-  element.innerHTML = item.title;
+
   item.class.forEach((cl) => {
     element.classList.add(cl);
   });
   const button = addLinkButton();
-  button.appendChild(element);
-  divItem.appendChild(button);
+  button.innerHTML = item.title;
+  element.appendChild(button);
+  divItem.appendChild(element);
   const logo = logoelement(logos[0], item.challengelink);
   divItem.appendChild(logo);
   divItem.classList.add("challenges");
