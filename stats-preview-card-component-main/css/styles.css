@@ -1,0 +1,125 @@
+:root {
+  --Verydarkblue-main-background: hsl(233, 47%, 7%);
+  --Darkdesaturatedblue-card-background: hsl(244, 38%, 16%);
+  --Softviolet-accent: hsl(277, 64%, 61%);
+
+  --White: hsl(0, 0%, 100%);
+  --Slightlytransparentwhite-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --Slightlytransparentwhite-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-VariableFont_slnt_wght.ttf");
+}
+
+@font-face {
+  font-family: Lexend;
+  src: url("../fonts/LexendDeca-VariableFont_wght.ttf");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Verydarkblue-main-background);
+  font-family: Inter;
+  text-align: center;
+  font-size: 15px;
+}
+
+h1 {
+  color: var(--White);
+  font-size: x-large;
+  margin-top: 0;
+}
+
+.container {
+  position: relative;
+  background-color: var(--Darkdesaturatedblue-card-background);
+  width: 20em;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.headerimage {
+  width: 100%;
+  height: auto;
+  opacity: 80%;
+  mix-blend-mode: multiply;
+  vertical-align: bottom;
+}
+
+.imagewrapper {
+  position: relative;
+  background-color: var(--Softviolet-accent);
+}
+
+.textcontainer {
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.insights {
+  color: var(--Softviolet-accent);
+}
+
+.text {
+  color: var(--Slightlytransparentwhite-main-paragraph);
+  padding-bottom: 1.5rem;
+}
+
+.statblock {
+  margin-bottom: 2rem;
+}
+
+.stats {
+  list-style: none;
+  padding-left: 0;
+}
+
+.stat {
+  margin: 0;
+  text-indent: 0;
+  color: var(--White);
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.subject {
+  color: var(--Slightlytransparentwhite-stat-headings);
+  text-transform: uppercase;
+  font-family: Lexend;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: xx-large;
+  }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 60rem;
+  }
+  .headerimage {
+    width: 30rem;
+  }
+  .textcontainer {
+    width: 24rem;
+    padding: 3rem;
+    padding-bottom: 0;
+  }
+  .stats {
+    display: flex;
+    width: 20rem;
+    margin-top: 3rem;
+    justify-content: space-between;
+  }
+}
