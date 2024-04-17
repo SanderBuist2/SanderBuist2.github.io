@@ -95,4 +95,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
   },
+  {
+    type: "a",
+    title: "3 column preview card component",
+    href: "./3-column-preview-card-component-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-",
+  },
 ];
