@@ -103,4 +103,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-",
   },
+  {
+    type: "a",
+    title: "profile card component",
+    href: "./profile-card-component-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ",
+  },
 ];
