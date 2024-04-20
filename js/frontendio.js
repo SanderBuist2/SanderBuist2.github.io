@@ -105,10 +105,10 @@ const frontendio = [
   },
   {
     type: "a",
-    title: "profile card component",
-    href: "./profile-card-component-main/index.html",
+    title: "social proof section",
+    href: "./social-proof-section-master/index.html",
     class: ["link"],
     challengelink:
-      "https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ",
+      "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
   },
 ];
