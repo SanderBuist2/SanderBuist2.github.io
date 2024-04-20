@@ -119,4 +119,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
   },
+  {
+    type: "a",
+    title: "article preview component",
+    href: "./article-preview-component-master/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
+  },
 ];
