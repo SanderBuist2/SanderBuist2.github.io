@@ -125,6 +125,14 @@ const frontendio = [
     href: "./article-preview-component-master/index.html",
     class: ["link"],
     challengelink:
-      "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
+      "https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT",
+  },
+  {
+    type: "a",
+    title: "four card feature section",
+    href: "./four-card-feature-section-master/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
   },
 ];
