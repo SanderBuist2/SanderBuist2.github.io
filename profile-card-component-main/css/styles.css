@@ -48,6 +48,7 @@ body {
 
 .name {
   font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .age {
@@ -58,6 +59,7 @@ body {
 
 .location {
   margin-top: 0;
+  margin-bottom: 2rem;
   font-size: medium;
   color: var(--Darkgrayishblue);
 }
@@ -78,7 +80,7 @@ body {
 }
 
 .subject {
-  margin-top: 0;
+  margin-top: 0.5rem;
   font-size: x-small;
   margin-bottom: 2rem;
   color: var(--Darkgrayishblue);
