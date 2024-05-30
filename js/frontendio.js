@@ -135,4 +135,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
   },
+  {
+    type: "a",
+    title: "base apparel coming soon",
+    href: "./base-apparel-coming-soon-master/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0",
+  },
 ];
