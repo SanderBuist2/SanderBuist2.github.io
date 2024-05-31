@@ -143,4 +143,12 @@ const frontendio = [
     challengelink:
       "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0",
   },
+  {
+    type: "a",
+    title: "intro component with signup form",
+    href: "./intro-component-with-signup-form-master/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
+  },
 ];
