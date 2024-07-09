@@ -23,10 +23,35 @@ const addLinkButton = (type = "button") => {
   return button;
 };
 
+const addItem = (parent, difficulty, item) => {
+  let childexists = false;
+  for (let i = 0; i < parent.childNodes.length; i++) {
+    if (parent.childNodes[i].getAttribute("id") == difficulty) {
+      childexists = true;
+      parent.childNodes[i].appendChild(item);
+    }
+  }
+  if (!childexists) {
+    const divItem = document.createElement("div");
+    divItem.setAttribute("id", difficulty);
+    const H2Item = document.createElement("h2");
+    H2Item.innerHTML = difficulty;
+    H2Item.classList.add("difficultyHeader");
+    divItem.appendChild(H2Item);
+    divItem.appendChild(item);
+    divItem.classList.add("challengescollection");
+    parent.appendChild(divItem);
+    console.log("it doesn't exist");
+  }
+};
+
 frontendio.forEach((item) => {
   const divItem = document.createElement("div");
   const element = document.createElement(item.type);
-  element.setAttribute("href", item.href);
+  const link =
+    item.href.slice(0, 2) + item.difficulty + "/" + item.href.slice(2);
+  console.log(link);
+  element.setAttribute("href", link);
 
   item.class.forEach((cl) => {
     element.classList.add(cl);
@@ -38,5 +63,5 @@ frontendio.forEach((item) => {
   const logo = logoelement(logos[0], item.challengelink);
   divItem.appendChild(logo);
   divItem.classList.add("challenges");
-  frondendmentorio.appendChild(divItem);
+  addItem(frondendmentorio, item.difficulty, divItem);
 });

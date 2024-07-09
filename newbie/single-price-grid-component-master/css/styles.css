@@ -1,0 +1,152 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+@font-face {
+  font-family: Karla;
+  src: url("../fonts/Karla-VariableFont_wght.ttf");
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Karla;
+  background-color: var(--LightGray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  border-radius: 0.3rem;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 22rem;
+}
+
+h2 {
+  font-size: large;
+}
+
+.join {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1;
+}
+
+.joinHeader {
+  color: var(--Cyan);
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.guarantee {
+  color: var(--BrightYellow);
+  margin: 1.5rem 0;
+  font-weight: 700;
+}
+.promotion {
+  color: var(--Cyan);
+  line-height: 1.8rem;
+}
+.subscription {
+  background-color: var(--Cyan);
+  color: var(--LightGray);
+  padding: 1.5rem;
+}
+.subscriptionHeader {
+  margin: 0;
+}
+
+.fee {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.price {
+  margin: 0;
+}
+.month {
+  color: var(--GrayishBlue);
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+.daily {
+  margin-top: 0.2rem;
+}
+
+.signup {
+  width: 100%;
+  text-align: center;
+  background-color: var(--BrightYellow);
+  margin-top: 2rem;
+  height: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 0.3rem;
+  box-shadow: 0.2rem 0.2rem 1rem gray;
+  cursor: pointer;
+}
+.whyUs {
+  background-color: var(--GrayishBlue);
+  color: var(--LightGray);
+  padding: 1.5rem;
+}
+.whyUsHeader {
+  margin: 0;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.points {
+  margin: 0;
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    height: 100vh;
+  }
+  main {
+    width: 40rem;
+    display: grid;
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: 12.5rem 1fr;
+  }
+  .join {
+    width: 36rem;
+    padding: 2rem;
+    padding-bottom: 0;
+    grid-column: 0 / -1;
+    grid-row: 0 / 0;
+  }
+  .subscription {
+    width: 16rem;
+    padding: 2rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / -1;
+  }
+  .whyUs {
+    width: 16rem;
+    padding: 2rem;
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+  }
+
+  .promotion {
+    margin-top: 0.8rem;
+  }
+
+  .guarantee {
+    margin-bottom: 0rem;
+  }
+}

@@ -76,6 +76,27 @@ h1 {
   margin-bottom: 1em;
 }
 
+.difficultyHeader {
+  position: relative;
+  width: 90%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  z-index: 3;
+}
+
+.difficultyHeader::after {
+  content: "";
+  width: 90%;
+  border: solid 1px;
+  border-bottom: #000;
+  position: absolute;
+  left: 5%;
+  top: 120%;
+  z-index: 1;
+}
+
 @media screen and (min-width: 1280px) {
   .challenges {
     display: flex;

@@ -6,6 +6,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -14,6 +15,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -22,6 +24,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -30,6 +33,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -38,6 +42,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -46,6 +51,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -54,6 +60,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -62,6 +69,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -70,6 +78,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -78,6 +87,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -86,6 +96,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -94,6 +105,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -102,6 +114,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -110,6 +123,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -118,6 +132,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -126,6 +141,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -134,6 +150,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -142,6 +159,7 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0",
+    difficulty: "newbie",
   },
   {
     type: "a",
@@ -150,5 +168,15 @@ const frontendio = [
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
+    difficulty: "newbie",
+  },
+  {
+    type: "a",
+    title: "single price grid component",
+    href: "./single-price-grid-component-master/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc",
+    difficulty: "newbie",
   },
 ];
