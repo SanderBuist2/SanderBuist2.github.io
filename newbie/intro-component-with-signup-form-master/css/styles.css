@@ -147,10 +147,11 @@ body {
 
   .header {
     margin: 1.5rem;
-    width: 20rem;
+    line-height: 3rem;
+    width: 26rem;
     font-family: poppins-bold;
     font-weight: 400;
-    font-size: xx-large;
+    font-size: 48px;
   }
 }
 
