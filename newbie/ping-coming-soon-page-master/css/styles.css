@@ -1,0 +1,150 @@
+:root {
+  --Blue: hsl(223, 87%, 63%);
+
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+@font-face {
+  font-family: Libre;
+  src: url("../fonts/LibreFranklin-VariableFont_wght.ttf");
+}
+
+body {
+  font-size: 20px;
+  font-family: Libre;
+}
+
+main {
+  text-align: center;
+  justify-content: center;
+}
+.logo {
+  width: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: larger;
+  font-weight: 300;
+  color: var(--Gray);
+}
+
+h1 span {
+  font-weight: 700;
+  color: black;
+}
+
+.Subscribe {
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.email {
+  width: 14rem;
+  border-radius: 2.2rem;
+  border: 1px solid var(--PaleBlue);
+  height: 2.2rem;
+  margin-bottom: 0.7rem;
+  padding-left: 2rem;
+}
+
+.email::placeholder {
+  color: var(--PaleBlue);
+}
+
+.email:invalid {
+  outline: 1px solid var(--LightRed);
+}
+
+.button {
+  width: 16rem;
+  border-radius: 2.5rem;
+  border: 0rem;
+  background-color: var(--Blue);
+  color: white;
+  font-weight: 600;
+  height: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--PaleBlue);
+}
+
+.dashboard {
+  width: 18rem;
+  margin-bottom: 7rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.socialbutton {
+  height: 1rem;
+  width: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--PaleBlue);
+  border-radius: 100%;
+  justify-content: center;
+}
+
+.socialbutton:hover {
+  background-color: var(--Blue);
+  color: white;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 12px;
+  color: var(--Gray);
+  margin-top: 0;
+}
+
+@media screen and (min-width: 33rem) {
+  h1 {
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+  }
+
+  .logo {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .email {
+    width: 18rem;
+  }
+
+  .button {
+    width: 10rem;
+    margin-left: 1rem;
+  }
+
+  .dashboard {
+    width: 32rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .social {
+    margin-bottom: 1.5rem;
+  }
+
+  .socialbutton {
+    font-size: 16px;
+  }
+}

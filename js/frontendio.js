@@ -179,4 +179,13 @@ const frontendio = [
       "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc",
     difficulty: "newbie",
   },
+  {
+    type: "a",
+    title: "Ping coming soon page",
+    href: "./ping-coming-soon-page-master/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
+    difficulty: "newbie",
+  },
 ];
