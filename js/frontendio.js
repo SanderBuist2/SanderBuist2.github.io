@@ -188,4 +188,13 @@ const frontendio = [
       "https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
     difficulty: "newbie",
   },
+  {
+    type: "a",
+    title: "Product list with cart",
+    href: "./product-list-with-cart-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d",
+    difficulty: "junior",
+  },
 ];
