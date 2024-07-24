@@ -7,6 +7,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
   background-color: #f8f8ff;
+  font-size: 16px;
 }
 h1 {
   text-align: center;
@@ -95,6 +96,13 @@ h1 {
   left: 5%;
   top: 120%;
   z-index: 1;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 1280px) {
