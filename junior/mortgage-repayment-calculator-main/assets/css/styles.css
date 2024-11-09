@@ -1,0 +1,352 @@
+:root {
+  --Lime: hsl(61, 70%, 52%);
+  --Lime-light: hsla(61, 70%, 52%, 0.25);
+  --Red: hsl(4, 69%, 50%);
+
+  --White: hsl(0, 0%, 100%);
+  --Slate100: hsl(202, 86%, 94%);
+  --Slate300: hsl(203, 41%, 72%);
+  --Slate500: hsl(200, 26%, 54%);
+  --Slate700: hsl(200, 24%, 40%);
+  --Slate900: hsl(202, 55%, 16%);
+}
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: PlusJakartaSans;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--Slate100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 24rem;
+}
+
+.calculatePage {
+  background-color: var(--White);
+  color: var(--Slate900);
+  padding: 1.5rem;
+}
+
+.calculatorHeader {
+  margin-bottom: 0.5rem;
+}
+
+.clearButton {
+  text-decoration: underline;
+  color: var(--Slate700);
+}
+
+.clearButton:hover {
+  cursor: pointer;
+  color: var(--Slate900);
+}
+
+.inputLabel {
+  display: block;
+  margin-top: 1rem;
+  color: var(--Slate700);
+}
+
+.inputField {
+  height: 2.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--Slate500);
+  text-indent: 0.5rem;
+}
+
+.inputField:hover {
+  cursor: pointer;
+  border-color: var(--Slate900);
+}
+
+.inputField:focus {
+  border: 1px solid var(--Lime);
+  outline: none;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputContainer:has(.inputField:focus) > .inputDescription {
+  background-color: var(--Lime);
+}
+
+.mortgageAmount {
+  text-indent: 3rem;
+}
+
+.inputerror input {
+  border: 1px solid var(--Red);
+}
+
+.inputerror .inputDescription {
+  background-color: var(--Red);
+}
+
+.pound {
+  position: absolute;
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  text-align: center;
+  line-height: 2.5rem;
+  top: calc(0.5rem + 1px);
+  left: 2px;
+  background-color: var(--Slate100);
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.inputDescription {
+  position: absolute;
+  height: 2.5rem;
+  padding: 0 0.75rem;
+  text-align: center;
+  line-height: 2.3rem;
+  top: calc(0.5rem + 1px);
+  background-color: var(--Slate100);
+}
+
+.leftInputDescription {
+  left: 0px;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.rightInputDescription {
+  right: -1px;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.radioContainer {
+  border: 1px solid var(--Slate500);
+  margin-top: 0.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 0.4rem;
+}
+
+.radioContainer:hover {
+  cursor: pointer;
+}
+
+.radioContainer:has(input[type="radio"]:checked) {
+  background-color: var(--Lime-light);
+  border-color: var(--Lime);
+}
+
+input[type="radio"] {
+  appearance: none;
+  margin: 0 0.5rem 0 0;
+  background-color: var(--White);
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font: inherit;
+  color: currentColor;
+  border: 0.1em solid var(--Slate500);
+  border-radius: 50%;
+  transform: translateY(0.125rem);
+}
+
+input[type="radio"]:checked {
+  border-color: var(--Lime);
+  box-shadow: inset -0.005rem -0.005rem 0 0.15rem var(--White);
+  background-color: var(--Lime);
+}
+
+.radioContainer input {
+  margin: 0 0.75rem;
+}
+
+.radioContainer label {
+  font-weight: 700;
+}
+
+.calculateButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: var(--Lime);
+  height: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 3rem;
+}
+
+.calculateButton img {
+  margin-right: 1rem;
+}
+
+.calculateButton:hover {
+  cursor: pointer;
+  background-color: var(--Lime-light);
+}
+
+.resultPage {
+  position: relative;
+  background-color: var(--Slate900);
+  color: var(--White);
+}
+
+.resultPage p {
+  color: var(--Slate300);
+  margin-top: 1.5rem;
+}
+
+.emptyResult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.emptyResult img {
+  width: 60%;
+}
+
+.calculatedResults {
+  padding: 2rem;
+}
+
+.result {
+  background-color: var(--Slate900);
+  mix-blend-mode: hard-light;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0rem -0.2rem var(--Lime);
+}
+
+.result p {
+  color: var(--Slate100);
+  margin-top: 1rem;
+}
+
+.monthlyRepayment {
+  color: var(--Lime);
+  font-size: xx-large;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.result hr {
+  margin-top: 1rem;
+}
+
+.totalRepayment {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.hide {
+  display: none;
+}
+
+.required {
+  color: var(--Red);
+  margin-top: 0.5rem;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 64rem) {
+  body {
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  main {
+    width: 64rem;
+    display: flex;
+    border-radius: 2rem;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .calculatePage {
+    padding: 2rem;
+    width: 32rem;
+  }
+
+  .resultPage {
+    width: 32rem;
+    padding-inline: 2rem;
+    height: 100%;
+    background-color: var(--Slate900);
+    border-bottom-left-radius: 6rem;
+  }
+
+  .morgageInterest {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .calculateButton {
+    width: 18rem;
+    margin-top: 2.5rem;
+  }
+
+  .titletop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .emptyResult {
+    height: 100%;
+    padding: 0;
+  }
+
+  .emptyResult img {
+    width: 12rem;
+    margin-bottom: 2rem;
+  }
+
+  .calculatedResults {
+    padding: 0;
+    padding-top: 3rem;
+  }
+
+  .result {
+    margin-top: 2rem;
+  }
+
+  .result p {
+    margin-bottom: 1rem;
+  }
+
+  .monthlyRepayment {
+    margin-bottom: 1.2rem;
+  }
+
+  .totalRepayment {
+    margin-bottom: 1.2rem;
+  }
+}
