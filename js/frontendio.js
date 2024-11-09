@@ -200,7 +200,7 @@ const frontendio = [
   {
     type: "a",
     title: "Mortgage repayment calculator",
-    href: "./Mortgage-repayment-calculator-main/index.html",
+    href: "./mortgage-repayment-calculator-main/index.html",
     class: ["link"],
     challengelink:
       "https://www.frontendmentor.io/challenges/mortgage-repayment-calculator-Galx1LXK73",
