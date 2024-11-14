@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script defer type="text/javascript" src="./assets/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form id="contactForm">
+        <h1>Contact Us</h1>
+        <div class="name">
+          <div class="halfPage">
+            <label for="firstName" class="mainLabel">First Name</label>
+            <input
+              class="inputfield requiredField"
+              id="firstName"
+              name="firstName"
+            />
+            <p class="required hide">This field is required</p>
+          </div>
+          <div class="halfPage">
+            <label for="lastName" class="mainLabel">Last Name</label>
+            <input
+              class="inputfield requiredField"
+              id="lastName"
+              name="lastName"
+            />
+            <p class="required hide">This field is required</p>
+          </div>
+        </div>
+        <label for="email" class="mainLabel">Email Address</label>
+        <input class="inputfield requiredField" id="email" name="email" />
+        <p class="invalidemail hide">Please enter a valid email address</p>
+        <p class="required hide">This field is required</p>
+
+        <label for="queryType" class="mainLabel">Query Type</label>
+        <div class="name requiredField">
+          <div class="radioBlock halfPage">
+            <input
+              class="radioButton"
+              type="radio"
+              name="queryType"
+              value="General Enquiry"
+              id="GeneralEnquiry"
+            />
+            <label for="GeneralEnquiry">General Enquiry</label>
+          </div>
+
+          <div class="radioBlock halfPage">
+            <input
+              class="radioButton"
+              type="radio"
+              name="queryType"
+              value="Support Request"
+              id="SupportRequest"
+            />
+            <label for="SupportRequest">Support Request</label>
+          </div>
+        </div>
+
+        <p class="required hide">Please select a query type</p>
+
+        <label for="message" class="mainLabel">Message</label>
+        <textarea
+          class="inputfield message requiredField"
+          id="message"
+          name="message"
+        ></textarea>
+        <p class="required hide">This field is required</p>
+        <div class="checkBox requiredField">
+          <input class="consent" type="checkbox" name="consent" id="consent" />
+          <label for="consent" class="mainLabel">
+            I consent to being contacted by the team</label
+          >
+        </div>
+        <p class="required hide">
+          To submit this form, please consent to being contacted
+        </p>
+
+        <input type="submit" value="Submit" class="submitButton" />
+        <div class="succesMessage hide" id="succesMessage">
+          <h4>Message Sent!</h4>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+      </form>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
