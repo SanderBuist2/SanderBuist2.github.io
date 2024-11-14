@@ -215,4 +215,13 @@ const frontendio = [
       "https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj",
     difficulty: "junior",
   },
+  {
+    type: "a",
+    title: "Contact form",
+    href: "./contact-form-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj",
+    difficulty: "junior",
+  },
 ];

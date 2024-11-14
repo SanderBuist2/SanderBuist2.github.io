@@ -1,0 +1,189 @@
+:root {
+  --Green200: hsl(148, 38%, 91%);
+  --Green600: hsl(169, 82%, 27%);
+  --Red: hsl(0, 66%, 54%);
+
+  --White: hsl(0, 0%, 100%);
+  --Grey500: hsl(186, 15%, 59%);
+  --Grey900: hsl(187, 24%, 22%);
+}
+
+@font-face {
+  font-family: Karla;
+  src: url("../fonts/Karla-VariableFont_wght.ttf");
+}
+
+body {
+  position: relative;
+  font-family: Karla;
+  font-size: 16px;
+  color: var(--Grey900);
+  background-color: var(--Green200);
+
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 15rem;
+  background-color: var(--White);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.inputfield,
+.radioBlock {
+  text-indent: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  border: 1px solid var(--Grey500);
+}
+
+.mainLabel {
+  display: inline-block;
+  margin-top: 1.2rem;
+}
+
+.mainLabel::after {
+  content: " *";
+}
+
+.radioButton {
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+  accent-color: var(--Green600);
+}
+
+.radioBlock,
+.checkBox {
+  display: flex;
+  align-items: center;
+}
+
+.radioBlock:has(input:checked) {
+  background-color: var(--Green200);
+}
+
+.checkBox {
+  margin-top: 1rem;
+}
+
+.checkBox .mainLabel {
+  margin: 0;
+}
+
+.message {
+  resize: none;
+  height: 10rem;
+}
+
+.hide {
+  display: none;
+}
+
+.consent {
+  margin-right: 1rem;
+  display: inline-block;
+  accent-color: var(--Green600);
+}
+
+.submitButton {
+  width: 100%;
+  height: 3rem;
+  font-size: medium;
+  color: var(--White);
+  background-color: var(--Green600);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Green600);
+  margin-top: 2rem;
+}
+
+.required {
+  margin: 0;
+  margin-top: 0.2rem;
+  top: 1rem;
+  color: var(--Red);
+}
+
+.invalidemail {
+  margin: 0;
+  margin-top: 0.2rem;
+  top: 1rem;
+  color: var(--Red);
+}
+
+.redBorder {
+  border-color: var(--Red);
+}
+
+.succesMessage {
+  width: 13rem;
+  position: absolute;
+  top: 1rem;
+  z-index: 2;
+  background-color: var(--Grey900);
+  color: var(--White);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.succesMessage h4 {
+  margin: 0;
+}
+
+.succesMessage h4::before {
+  content: url("../images/icon-success-check.svg");
+  margin-right: 0.5rem;
+}
+
+.succesMessage p {
+  color: var(--White);
+  margin-bottom: 0.5rem;
+}
+
+.submitButton:hover {
+  background-color: var(--Grey900);
+  cursor: pointer;
+}
+
+.inputfield:hover {
+  border-color: var(--Grey900);
+  cursor: pointer;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 60rem) {
+  form {
+    width: 42rem;
+    padding: 2rem;
+    padding-top: 1rem;
+  }
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .halfPage {
+    width: 48%;
+  }
+
+  .succesMessage {
+    width: 26rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .message {
+    height: 5rem;
+  }
+}
