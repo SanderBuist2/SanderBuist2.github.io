@@ -1,0 +1,187 @@
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --Tomatobackground: hsla(4, 100%, 67%, 15%);
+
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+body {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  background-color: var(--CharcoalGrey);
+  font-size: 16px;
+  color: var(--DarkSlateGrey);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+form {
+  width: 22rem;
+  background-color: var(--White);
+}
+
+h1 {
+  font-family: RobotoBold;
+  font-weight: 700;
+}
+
+.formPart {
+  padding: 0.5rem 1rem 2rem 1rem;
+}
+
+.promote {
+  margin-bottom: 2rem;
+}
+
+.promotionPoint {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.listIcon {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 1rem;
+}
+
+label {
+  position: relative;
+  display: block;
+  margin-top: 2rem;
+  font-size: smaller;
+  font-family: RobotoBold;
+}
+
+.errorText {
+  position: absolute;
+  color: var(--Tomato);
+  right: 0rem;
+}
+
+.email {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Grey);
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  text-indent: 1.5rem;
+  padding: 0;
+}
+
+.errorField {
+  border-color: var(--Tomato);
+  color: var(--Tomato);
+  background-color: var(--Tomatobackground);
+}
+
+.email:focus {
+  outline: none;
+  border-color: var(--DarkSlateGrey);
+}
+
+.email:hover {
+  cursor: pointer;
+}
+
+.subscribeButton {
+  width: 100%;
+  height: 3rem;
+  color: var(--White);
+  background-color: var(--CharcoalGrey);
+  border: 0;
+  border-radius: 0.5rem;
+  font-family: RobotoBold;
+}
+
+.subscribeButton:hover,
+.dismiss:hover {
+  background-color: var(--Tomato);
+  cursor: pointer;
+  box-shadow: 0rem 0.5rem 2rem var(--Tomato);
+}
+
+.thanks {
+  width: 18rem;
+  background-color: var(--White);
+  color: var(--CharcoalGrey);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+span {
+  font-family: RobotoBold;
+}
+
+.succesImage {
+  height: 3rem;
+  width: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.dismiss {
+  width: 100%;
+  background-color: var(--DarkSlateGrey);
+  color: var(--White);
+  font-family: RobotoBold;
+  height: 3rem;
+  border-radius: 0.5rem;
+  line-height: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: auto;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 48rem) {
+  form {
+    width: 48rem;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+
+  .formPart {
+    padding: 2rem;
+    width: 24rem;
+  }
+
+  .picture img {
+    transform: translate(0rem, 0rem);
+  }
+  .picture {
+    width: 24rem;
+    overflow: hidden;
+  }
+}
