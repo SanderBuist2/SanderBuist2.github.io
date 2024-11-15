@@ -224,4 +224,13 @@ const frontendio = [
       "https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj",
     difficulty: "junior",
   },
+  {
+    type: "a",
+    title: "Newsletter with succes message",
+    href: "./newsletter-sign-up-with-success-message-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv",
+    difficulty: "junior",
+  },
 ];
