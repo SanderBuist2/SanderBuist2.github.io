@@ -233,4 +233,13 @@ const frontendio = [
       "https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv",
     difficulty: "junior",
   },
+  {
+    type: "a",
+    title: "Age calculator app",
+    href: "./age-calculator-app-main/index.html",
+    class: ["link"],
+    challengelink:
+      "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
+    difficulty: "junior",
+  },
 ];
