@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script defer type="text/javascript" src="./assets/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form id="dateInput">
+        <div class="input">
+          <label for="day" id="dayLabel" class="dateLabels"> Day</label>
+          <input class="inputField" name="day" placeholder="DD" />
+          <p class="errormessage hide">error</p>
+        </div>
+        <div class="input">
+          <label for="month" id="monthLabel" class="dateLabels">Month</label>
+          <input class="inputField" name="month" placeholder="MM" />
+          <p class="errormessage hide">error</p>
+        </div>
+        <div class="input">
+          <label for="year" id="yearLabel" class="dateLabels">Year</label>
+          <input class="inputField" name="year" placeholder="YYYY" />
+          <p class="errormessage hide">error</p>
+        </div>
+      </form>
+      <div class="line">
+        <img src="./assets/images/icon-arrow.svg" class="arrow" id="arrow" />
+      </div>
+      <h1><span class="number" id="years">--</span>years</h1>
+      <h1><span class="number" id="months">--</span>months</h1>
+      <h1><span class="number" id="days">--</span>days</h1>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/SanderBuist2"
+        >Sander Buist</a
+      >.
+    </div>
+  </body>
+</html>
